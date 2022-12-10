@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Acorn Admin Template | Ecommerce Dashboard</title>
+    <title>toHoney | @yield('title')</title>
     <meta name="description" content="Ecommerce Dashboard" />
     {{--    css--}}
     @include('backend.layouts.inc.style')
@@ -41,8 +41,8 @@
     </div>
 
     <main>
-       <div class="container">
-           <h1>Start Here</h1>
+       <div class="container mt-5">
+           @yield('admin-content')
        </div>
     </main>
     <!-- Layout Footer Start -->
